@@ -8,7 +8,12 @@ const Login = () => {
    const login = async () => {
       const provider = new GoogleAuthProvider();
       const {user} = await signInWithPopup(auth, provider)
-      console.log("user: ", user)
+      if (user.emailVerified === false){
+         return "verifique si email"
+      }else {
+         console.log("user------------------->: ", user)
+         alert( "email verificado")
+      }
    }
 
    return (
