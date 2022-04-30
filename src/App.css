@@ -23,10 +23,15 @@
 .logo-chat{
    height: 100%;
 }
+.bottons{
+   display: flex;
+   align-content: space-around;
+}
 
 .auth-btns{
    display: flex;
    gap: 15px;
+   margin: 5rem
 }
 
 .auth-btns a{
@@ -51,7 +56,9 @@
 .btn-green{
    background-color: #498477;
 }
-
+.btn-blue{
+   background-color: #0f007e;
+}
 .btn-green:hover{
    background-color: #34675C;
 }
